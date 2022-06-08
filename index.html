@@ -13,7 +13,7 @@
     <body>
 
         <header>
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">Navbar</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,14 +41,113 @@
                     </ul>
                     <form class="d-flex" role="search">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
+                      <button class="btn btn-outline-primary" type="submit">Search</button>
                     </form>
                   </div>
                 </div>
             </nav>
         </header>
         
-        <h1 class="text-center">Hello Bootstrap!</h1>
+        <main>
+            <div class="container">
+                <!-- Image and paragraph -->
+                <div class="row my-5">
+                    <div class="col-md-7 mb-3 mb-md-0">
+                        <img class="img-fluid rounded" src="https://picsum.photos/600/400" alt="image">
+                    </div>
+                    <div class="col-md-5">
+                        <h1>Lorem Ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error recusandae similique soluta provident. Aut dicta accusamus nostrum explicabo. Ullam tenetur ad architecto. Sunt soluta, nisi eligendi fuga accusantium distinctio id!</p>
+                        <button class="btn btn-primary">Read more</button>
+                    </div>
+                </div>
+                <!-- Quote -->
+                <div class="card bg-secondary text-white text-center my-5 py-3">
+                  <div class="card-body">
+                    <p class="d-inline align-middle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, beatae.</p>
+                  </div>
+                </div>
+                <!-- Cards group -->
+                <div class="card-group flex-column flex-md-row mb-5">
+                  <div class="card">
+                    <img src="https://picsum.photos/600/400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ratione explicabo facilis quis porro at error eius laborum perferendis hic.</p>
+                      <button type="button" class="btn btn-outline-primary">Read more</button>
+
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="https://picsum.photos/600/400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ratione explicabo facilis quis porro at error eius laborum perferendis hic.</p>
+                      <button type="button" class="btn btn-outline-primary">Read more</button>
+
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="https://picsum.photos/600/400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ratione explicabo facilis quis porro at error eius laborum perferendis hic.</p>
+                      <button type="button" class="btn btn-outline-primary">Read more</button>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- Get it touch -->
+                <div class="text-center">
+                  <h2>Get it touch</h2>
+                  <p class="lead">Questions? Do not hesitate to contact us.</p>
+                </div>
+                <!-- Form -->
+                <div class="row justify-content-center my-5">
+                  <div class="col-md-6">
+                    <form action="">
+                      <!-- Name -->
+                      <label class="form-label" for="name">Name:</label>
+                      <input
+                        class="form-control mb-3"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Name"
+                      />
+                      <!-- Email -->
+                      <label class="form-label" for="email">Email:</label>
+                      <input
+                        class="form-control mb-3"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="name@email.com"
+                      />
+                      <!-- Select -->
+                      <label class="form-label" for="subject">Subject</label>
+                      <select class="form-select mb-3" name="subject" id="subject">
+                        <option value="technical" selected>Technical question</option>
+                        <option value="pricing">Pricing</option>
+                        <option value="other">Other</option>
+                      </select>
+                      <!-- Text area -->
+                      <label class="form-label" for="query">Write a message</label>
+                      <textarea
+                        class="form-control mb-4"
+                        name="query" id="query"
+                        cols="3"
+                        placeholder="Write message...">
+                      </textarea>
+                      <!-- Button -->
+                      <div class="text-center">
+                        <button class="btn btn-primary" type="submit">Send</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+        </main>
 
         <!-- Scripts -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
